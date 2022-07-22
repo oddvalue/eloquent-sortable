@@ -5,7 +5,7 @@
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/oddvalue/eloquent-sortable.svg?style=flat-square)](https://packagist.org/packages/oddvalue/eloquent-sortable)
 [![GitHub Tests Action Status](https://img.shields.io/github/workflow/status/oddvalue/eloquent-sortable/run-tests?label=tests)](https://github.com/oddvalue/eloquent-sortable/actions?query=workflow%3Arun-tests+branch%3Amain)
-[![GitHub Code Style Action Status](https://img.shields.io/github/workflow/status/oddvalue/eloquent-sortable/Check%20&%20fix%20styling?label=code%20style)](https://github.com/oddvalue/eloquent-sortable/actions?query=workflow%3A"Check+%26+fix+styling"+branch%3Amain)
+[![GitHub Code Style Action Status](https://img.shields.io/github/workflow/status/oddvalue/eloquent-sortable/Fix%20PHP%20code%20style%20issues?label=code%20style)](https://github.com/oddvalue/eloquent-sortable/actions?query=workflow%3A"Fix+PHP+code+style+issues"+branch%3Amain)
 [![Total Downloads](https://img.shields.io/packagist/dt/oddvalue/eloquent-sortable.svg?style=flat-square)](https://packagist.org/packages/oddvalue/eloquent-sortable)
 
 This package is an extension of Spatie's excellent [Eloquent Sortable](https://github.com/spatie/eloquent-sortable). It adds the following additional features:
