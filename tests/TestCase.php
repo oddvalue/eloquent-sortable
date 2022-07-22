@@ -1,10 +1,11 @@
 <?php
 
-namespace VendorName\Skeleton\Tests;
+namespace Oddvalue\EloquentSortable\Tests;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
+use Illuminate\Database\Schema\Blueprint;
 use Orchestra\Testbench\TestCase as Orchestra;
-use VendorName\Skeleton\SkeletonServiceProvider;
+use Oddvalue\EloquentSortable\EloquentSortableServiceProvider;
 
 class TestCase extends Orchestra
 {
@@ -12,25 +13,45 @@ class TestCase extends Orchestra
     {
         parent::setUp();
 
-        Factory::guessFactoryNamesUsing(
-            fn (string $modelName) => 'VendorName\\Skeleton\\Database\\Factories\\'.class_basename($modelName).'Factory'
-        );
+        $this->setUpDatabase();
     }
 
+    /**
+     * @param \Illuminate\Foundation\Application $app
+     *
+     * @return array
+     */
     protected function getPackageProviders($app)
     {
         return [
-            SkeletonServiceProvider::class,
+
         ];
     }
 
-    public function getEnvironmentSetUp($app)
+    /**
+     * @param \Illuminate\Foundation\Application $app
+     */
+    protected function getEnvironmentSetUp($app)
     {
-        config()->set('database.default', 'testing');
+        $app['config']->set('database.default', 'sqlite');
+        $app['config']->set('database.connections.sqlite', [
+            'driver' => 'sqlite',
+            'database' => ':memory:',
+            'prefix' => '',
+        ]);
+    }
 
-        /*
-        $migration = include __DIR__.'/../database/migrations/create_skeleton_table.php.stub';
-        $migration->up();
-        */
+    public function setUpDatabase()
+    {
+        $this->app['db']->connection()->getSchemaBuilder()->create('dummies', function (Blueprint $table) {
+            $table->increments('id');
+            $table->integer('order_column');
+        });
+
+        collect(range(1, 10))->each(function (int $i) {
+            Dummy::create([
+                'order_column' => $i,
+            ]);
+        });
     }
 }
