@@ -4,7 +4,6 @@ namespace Oddvalue\EloquentSortable;
 
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use Oddvalue\EloquentSortable\Commands\EloquentSortableCommand;
 
 class EloquentSortableServiceProvider extends PackageServiceProvider
 {

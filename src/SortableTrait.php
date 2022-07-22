@@ -3,7 +3,6 @@
 namespace Oddvalue\EloquentSortable;
 
 use Illuminate\Database\Eloquent\Builder;
-use Illuminate\Database\Eloquent\SoftDeletingScope;
 use Spatie\EloquentSortable\Sortable;
 
 trait SortableTrait
@@ -27,7 +26,7 @@ trait SortableTrait
 
     public static function resortRowsDeleted(Sortable $instance): void
     {
-        if (!$instance->shouldSortWhenDeleting()) {
+        if (! $instance->shouldSortWhenDeleting()) {
             return;
         }
         $instance->newQuery()
