@@ -41,14 +41,13 @@ class TestCase extends Orchestra
     public function setUpDatabase()
     {
         $this->app['db']->connection()->getSchemaBuilder()->create('dummies', function (Blueprint $table) {
-            $table->increments('id');
+            $table->id();
             $table->integer('order_column');
+            $table->integer('original_position')->nullable();
         });
 
         collect(range(1, 10))->each(function (int $i) {
-            Dummy::create([
-                'order_column' => $i,
-            ]);
+            Dummy::create(['original_position' => $i]);
         });
     }
 }

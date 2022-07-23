@@ -11,4 +11,14 @@ class Dummy extends \Illuminate\Database\Eloquent\Model implements \Oddvalue\Elo
     protected $guarded = [];
 
     public $timestamps = false;
+
+    public array $sortable = [
+        'order_column' => 'order_column',
+        'sort_when_deleting' => true,
+    ];
+
+    protected $casts = [
+        'order_column' => 'integer',
+        'original_position' => 'integer',
+    ];
 }

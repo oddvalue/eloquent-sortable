@@ -11,12 +11,12 @@
 This package is an extension of Spatie's excellent [Eloquent Sortable](https://github.com/spatie/eloquent-sortable). It adds the following additional features:
 
 * New methods
-    - `$model->moveBefore(Sortable $target): void`
-    - `$model->moveAfter(Sortable $target): void`
-    - `$model->moveBetween(Sortable $before = null, Sortable $after = null): void` 
+    - `$model->moveBefore(int|Sortable $target): void`
+    - `$model->moveAfter(int|Sortable $target): void`
+    - `$model->moveBetween(int|Sortable $before = null, Sortable $after = null): void` 
     - `$model->moveTo(int|Sortable $newPosition): void`
-* New features
-    - Automatic re-sorting after deleting a model
+
+__Note:__ The move methods rebuild the entire sequence so this package is not recommended for very large datasets.
 
 ## Installation
 
@@ -42,19 +42,27 @@ $model = MyModel::create(['title' => 'foo']);
 
 # Move the model before the 5th item in the list
 $model->moveBefore(MyModel::where('order_column', 5)->first());
+// OR
+$model->moveBefore(5);
 
 # Move the model after the 5th item in the list
 $model->moveAfter(MyModel::where('order_column', 5)->first());
+// OR
+$model->moveAfter(5);
 
 # Move the model between the 5th and 6th item in the list
 $model->moveBetween(
     MyModel::where('order_column', 5)->first(), 
     MyModel::where('order_column', 6)->first()
 );
+// OR
+$model->moveBetween(5, 6);
 # This is useful when using a javacript library that provides the node before
 # and after the location an item is dropped
 
 # Move the model to the 5th item in the list
+$model->moveTo(MyModel::where('order_column', 5)->first());
+// OR
 $model->moveTo(5);
 ```
 

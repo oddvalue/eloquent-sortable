@@ -58,16 +58,6 @@
             "phpstan/extension-installer": true
         }
     },
-    "extra": {
-        "laravel": {
-            "providers": [
-                "Oddvalue\\EloquentSortable\\EloquentSortableServiceProvider"
-            ],
-            "aliases": {
-                "EloquentSortable": "Oddvalue\\EloquentSortable\\Facades\\EloquentSortable"
-            }
-        }
-    },
     "minimum-stability": "dev",
     "prefer-stable": true
 }
