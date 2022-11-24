@@ -24,15 +24,17 @@ trait SortableTrait
             $after = $after->getSortingValue();
         }
 
-        if ($before === $from) {
-            return;
-        }
-
         if ($before) {
             // if the node has a sibling before it, insert after it
+            if ($before === $from) {
+                return;
+            }
             $to = $before + ($from >= $before ? 1 : 0);
         } elseif ($after) {
             // if the node has a sibling after it, insert before it
+            if ($after === $from) {
+                return;
+            }
             $to = $after - ($from <= $after ? 1 : 0);
         }
 
