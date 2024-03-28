@@ -11,7 +11,7 @@ trait SortableTrait
         return $this->{$this->determineOrderColumnName()};
     }
 
-    public function moveBetween(Sortable|int $before = null, Sortable|int $after = null): void
+    public function moveBetween(Sortable|int|null $before = null, Sortable|int|null $after = null): void
     {
         $from = $this->getSortingValue();
         $to = null;
