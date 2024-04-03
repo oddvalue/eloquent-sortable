@@ -6,6 +6,7 @@
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/oddvalue/eloquent-sortable.svg?style=flat-square)](https://packagist.org/packages/oddvalue/eloquent-sortable)
 [![GitHub Tests Action Status](https://img.shields.io/github/actions/workflow/status/oddvalue/eloquent-sortable/run-tests.yml?label=tests&style=flat-square)](https://github.com/oddvalue/eloquent-sortable/actions?query=workflow%3Arun-tests+branch%3Amain)
 [![Total Downloads](https://img.shields.io/packagist/dt/oddvalue/eloquent-sortable.svg?style=flat-square)](https://packagist.org/packages/oddvalue/eloquent-sortable)
+![Coverage](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/oddvalue/9dd8e508cb2433728d42a258193770eb/raw/eloquent-sortable-cobertura-coverage.json)
 
 This package is an extension of Spatie's excellent [Eloquent Sortable](https://github.com/spatie/eloquent-sortable). It adds the following additional features:
 
