@@ -2,6 +2,4 @@
 
 namespace Oddvalue\EloquentSortable;
 
-interface Sortable extends \Spatie\EloquentSortable\Sortable
-{
-}
+interface Sortable extends \Spatie\EloquentSortable\Sortable {}
