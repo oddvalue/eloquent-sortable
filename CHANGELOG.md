@@ -2,6 +2,25 @@
 
 All notable changes to `eloquent-sortable` will be documented in this file.
 
+## v2.1.0 - 2025-04-25
+
+### What's Changed
+
+* Coverage badge by @oddvalue in https://github.com/oddvalue/eloquent-sortable/pull/15
+* Bump stefanzweifel/git-auto-commit-action from 4 to 5 by @dependabot in https://github.com/oddvalue/eloquent-sortable/pull/13
+* Bump actions/checkout from 3 to 4 by @dependabot in https://github.com/oddvalue/eloquent-sortable/pull/12
+* Bump aglipanci/laravel-pint-action from 2.3.0 to 2.3.1 by @dependabot in https://github.com/oddvalue/eloquent-sortable/pull/17
+* Bump ramsey/composer-install from 2 to 3 by @dependabot in https://github.com/oddvalue/eloquent-sortable/pull/18
+* Bump dependabot/fetch-metadata from 1.6.0 to 2.0.0 by @dependabot in https://github.com/oddvalue/eloquent-sortable/pull/16
+* Bump aglipanci/laravel-pint-action from 2.3.1 to 2.4 by @dependabot in https://github.com/oddvalue/eloquent-sortable/pull/19
+* Bump dependabot/fetch-metadata from 2.0.0 to 2.1.0 by @dependabot in https://github.com/oddvalue/eloquent-sortable/pull/20
+* Bump dependabot/fetch-metadata from 2.1.0 to 2.2.0 by @dependabot in https://github.com/oddvalue/eloquent-sortable/pull/21
+* Bump dependabot/fetch-metadata from 2.2.0 to 2.3.0 by @dependabot in https://github.com/oddvalue/eloquent-sortable/pull/22
+* Bump aglipanci/laravel-pint-action from 2.4 to 2.5 by @dependabot in https://github.com/oddvalue/eloquent-sortable/pull/23
+* Laravel 12 by @oddvalue in https://github.com/oddvalue/eloquent-sortable/pull/24
+
+**Full Changelog**: https://github.com/oddvalue/eloquent-sortable/compare/v2.0.0...v2.1.0
+
 ## v2.0.0 - 2024-03-28
 
 ### What's Changed
