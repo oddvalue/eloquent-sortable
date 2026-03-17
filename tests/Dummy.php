@@ -2,9 +2,13 @@
 
 namespace Oddvalue\EloquentSortable\Tests;
 
-class Dummy extends \Illuminate\Database\Eloquent\Model implements \Oddvalue\EloquentSortable\Sortable
+use Illuminate\Database\Eloquent\Model;
+use Oddvalue\EloquentSortable\Sortable;
+use Oddvalue\EloquentSortable\SortableTrait;
+
+class Dummy extends Model implements Sortable
 {
-    use \Oddvalue\EloquentSortable\SortableTrait;
+    use SortableTrait;
 
     protected $table = 'dummies';
 
