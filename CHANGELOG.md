@@ -2,6 +2,17 @@
 
 All notable changes to `eloquent-sortable` will be documented in this file.
 
+## v2.2.0 - 2026-03-31
+
+### What's Changed
+
+* Bump dependabot/fetch-metadata from 2.3.0 to 2.4.0 by @dependabot[bot] in https://github.com/oddvalue/eloquent-sortable/pull/25
+* Bump aglipanci/laravel-pint-action from 2.5 to 2.6 by @dependabot[bot] in https://github.com/oddvalue/eloquent-sortable/pull/27
+* Bump dependabot/fetch-metadata from 2.4.0 to 2.5.0 by @dependabot[bot] in https://github.com/oddvalue/eloquent-sortable/pull/31
+* Bump ramsey/composer-install from 3 to 4 by @dependabot[bot] in https://github.com/oddvalue/eloquent-sortable/pull/32
+
+**Full Changelog**: https://github.com/oddvalue/eloquent-sortable/compare/v2.1.0...v2.2.0
+
 ## v2.1.0 - 2025-04-25
 
 ### What's Changed
